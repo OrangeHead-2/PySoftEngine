@@ -1,49 +1,49 @@
 ```markdown
-# PySoftEngine
+```
+PySoftEngine
 
-**PySoftEngine** is a highly extensible, zero‑dependency Python graphics engine and educational toolkit. It delivers a complete 2D/3D rendering and simulation pipeline—covering raw rasterization, shader scripting, animation, physics, GUI and terminal visualization, and browser demos via WebAssembly—all implemented in pure Python.
+PySoftEngine is a highly extensible, zero‑dependency Python graphics engine and educational toolkit. It delivers a complete 2D/3D rendering and simulation pipeline—covering raw rasterization, shader scripting, animation, physics, GUI and terminal visualization, and browser demos via WebAssembly—all implemented in pure Python.
+```
+```
+Key Features
 
----
+  Shader Pipeline: Modular vertex and fragment shaders defined as Python callables. Supports Lambert, Phong, Toon, and custom lighting models.
+  Scene Scripting: Flexible scene graph with nodes and hierarchical transforms. Easy-to-use DSL for programmatic scene construction.
+  Animation Engine: Keyframe interpolation, skeletal transforms, threaded playback, and real-time scene updates.
+  Physics Engine: Real-time rigid-body simulation with bounding-box collision, mass/force integration, gravity, and threading support.
+  GUI Tool "RasterLab": Tkinter-based interactive canvas for visualizing rasterization stages, displaying wireframe vs. filled geometry, depth buffer, and debug overlays.
+  Terminal ASCII Renderer: High-fidelity ASCII art output with Z-buffered shading, dithering, and live camera controls.
+  WebAssembly & PyScript Ready: Preconfigured hooks for running engines in-browser via Pyodide or WebAssembly.
+  Educational Mode: Step-by-step breakdown of each rendering stage—matrix math, culling, clipping, rasterization, and depth testing—with interactive inspection.
+  Plug-in System: Easily extend with custom shaders, mesh loaders, and exporters (e.g., PNG, STL, GIF).
+  Multithreaded Rasterization: Parallel triangle processing and threaded physics/animation for high performance on multi-core CPUs.
 
-## Key Features
+```
+```
+Quick Start
 
-* **Shader Pipeline**: Modular vertex and fragment shaders defined as Python callables. Supports Lambert, Phong, Toon, and custom lighting models.
-* **Scene Scripting**: Flexible scene graph with nodes and hierarchical transforms. Easy-to-use DSL for programmatic scene construction.
-* **Animation Engine**: Keyframe interpolation, skeletal transforms, threaded playback, and real-time scene updates.
-* **Physics Engine**: Real-time rigid-body simulation with bounding-box collision, mass/force integration, gravity, and threading support.
-* **GUI Tool "RasterLab"**: Tkinter-based interactive canvas for visualizing rasterization stages, displaying wireframe vs. filled geometry, depth buffer, and debug overlays.
-* **Terminal ASCII Renderer**: High-fidelity ASCII art output with Z-buffered shading, dithering, and live camera controls.
-* **WebAssembly & PyScript Ready**: Preconfigured hooks for running engines in-browser via Pyodide or WebAssembly.
-* **Educational Mode**: Step-by-step breakdown of each rendering stage—matrix math, culling, clipping, rasterization, and depth testing—with interactive inspection.
-* **Plug-in System**: Easily extend with custom shaders, mesh loaders, and exporters (e.g., PNG, STL, GIF).
-* **Multithreaded Rasterization**: Parallel triangle processing and threaded physics/animation for high performance on multi-core CPUs.
-
----
-
-## Quick Start
-
-1. **Requirements:** Python 3.8+ (no external packages)
-2. **Install** (from project root):
+1. Requirements: Python 3.8+ (no external packages)
+2. Install (from project root):
 
    ```bash
    pip install .
    ```
-3. **Run the GUI Visualizer:**
+3. Run the GUI Visualizer:
 
    ```bash
    pysoftraster gui
    ```
-4. **Render ASCII in Terminal:**
+4. Render ASCII in Terminal:
 
    ```bash
    pysoftraster ascii --input scene.obj
    ```
-5. **Compile for WebAssembly (demo):**
+5. Compile for WebAssembly (demo):
 
    ```bash
    pysoftraster wasm
    ```
-6. **Programmatic Rendering:**
+6. Programmatic Rendering:
 
    ```python
    from pysoftraster.engine.scripting import Scene
@@ -58,21 +58,20 @@
    scene.render('output.ppm')
    ```
 
----
 
-## Educational Features
 
-* **Pipeline Visualization:** Scrub through stages: vertex transform, back-face culling, clipping, rasterization, depth testing.
-* **Matrix & Buffer Inspection:** Inspect intermediate data structures at runtime.
-* **Live Mode:** Switch between ASCII, Tkinter GUI, or raw image output.
+Educational Features
 
-## License
+Pipeline Visualization: Scrub through stages: vertex transform, back-face culling, clipping, rasterization, depth testing.
+Matrix & Buffer Inspection: Inspect intermediate data structures at runtime.
+Live Mode: Switch between ASCII, Tkinter GUI, or raw image output.
+
+License
 
 This project is licensed under the MIT License. See [LICENSE](/LICENSE) for details.
 
----
 
-## Acknowledgments
+Acknowledgments
 
 Inspired by classic software rasterizers, educational graphics platforms, and the vibrant open-source community.
 
