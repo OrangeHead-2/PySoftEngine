@@ -66,16 +66,6 @@
 * **Matrix & Buffer Inspection:** Inspect intermediate data structures at runtime.
 * **Live Mode:** Switch between ASCII, Tkinter GUI, or raw image output.
 
----
-
-## Contributing & Governance
-
-* **Issues & PRs:** Please follow our [CONTRIBUTING.md](/CONTRIBUTING.md) guidelines.
-* **Code of Conduct:** See [CODE\_OF\_CONDUCT.md](/CODE_OF_CONDUCT.md).
-* **Roadmap:** View planned features and milestones in our GitHub Wiki.
-
----
-
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](/LICENSE) for details.
