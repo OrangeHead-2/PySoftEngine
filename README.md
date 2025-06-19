@@ -20,25 +20,6 @@
 
 ---
 
-## Repository Structure
-
-```
-pysoftraster/
-├── core/            # Math, buffer, and rasterizer implementations
-├── engine/          # Animation, shader manager, physics, scripting, ASCII renderer
-├── gui/             # RasterLab GUI and debug panels
-├── web/             # PyScript integration modules
-├── wasm/            # WebAssembly build tools
-├── scene/           # Scene graph, camera, mesh definitions, OBJ loader
-├── io/              # File writers (PPM, BMP) and viewport management
-├── examples/        # CLI and script-based demos
-├── tests/           # Unit tests with pytest
-├── assets/          # Sample meshes and resources
-└── README.md        # Project overview and documentation
-```
-
----
-
 ## Quick Start
 
 1. **Requirements:** Python 3.8+ (no external packages)
